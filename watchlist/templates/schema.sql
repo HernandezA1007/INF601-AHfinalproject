@@ -8,7 +8,7 @@ CREATE TABLE user (
   password TEXT NOT NULL
 );
 
-CREATE TABLE watch_list (
+CREATE TABLE watch_list ( -- different sql db, not implemented yet
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   author_id INTEGER NOT NULL,
