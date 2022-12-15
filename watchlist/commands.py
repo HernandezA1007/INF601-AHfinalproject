@@ -2,7 +2,7 @@
 # Antonio Hernandez
 # Final Project
 
-
+# Proper import of packages used.
 import click
 
 from watchlist import app, db
@@ -18,13 +18,13 @@ def initdb(drop):
     db.create_all()
     click.echo('Initialized database.')
 
-
+# Example / testing with fake data
 @app.cli.command()
 def forge():
     """Generate fake data."""
     db.create_all()
 
-    name = 'Grey Li'
+    name = 'Antonio Hernandez'
     movies = [
         {'title': 'My Neighbor Totoro', 'year': '1988'},
         {'title': 'Dead Poets Society', 'year': '1989'},

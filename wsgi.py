@@ -3,6 +3,7 @@
 # Final Project
 
 
+# Proper import of packages used.
 import os
 
 from dotenv import load_dotenv
